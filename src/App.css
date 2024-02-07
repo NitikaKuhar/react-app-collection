@@ -1,0 +1,138 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.App {
+  /* text-align: center; */
+  margin: 20px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.App-header {
+  /* min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin); */
+}
+
+.App-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes App-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+body {
+  background: rgb(226, 224, 224);
+  color: rgb(8, 3, 3);
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.list {
+  border: 1px solid #fff;
+  padding: 5px;
+}
+
+.pagination {
+  display: flex;
+  border: 1px solid #fff;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.pagination button {
+  padding: 10px;
+}
+
+.active {
+  background: black;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/*------------ Address Book - Search And Filter --------------*/
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.filter-container{
+  display: flex;
+  flex-direction: row;
+}
+
+.header-section {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  align-items: center;
+
+}
+
+.search-container, .filter-container{
+  margin: 10px;
+}
+
+  .table-container          { overflow: auto; height: 500px; width: 100%; }
+  .table-container thead th { position: sticky; top: 0; z-index: 1; }
+  .table-container tbody th { position: sticky; left: 0; }
+
+
+  table  { border-collapse: collapse; width: 100%; }
+  th, td { padding: 8px 16px; white-space: nowrap; }
+  th     { background:#eee; }
+
+/*------------ Address Book - Search And Filter --------------*/
+
+
+/*------------ Autocomplete  Start--------------*/
+.autocomplate-container{
+  margin: 40px;
+  align-items: center;
+}
+
+input {
+  width: 800px;
+}
+.suggestions{
+  cursor: pointer;
+  height: 30px;
+  width: 800px;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.suggestions:hover{
+  background-color: rgb(210, 235, 243);
+}
+
+/*------------ Autocomplete  END--------------*/

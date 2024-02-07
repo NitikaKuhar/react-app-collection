@@ -1,0 +1,9 @@
+.team-players{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.team-a ,.team-b{
+    width: 500px;
+}

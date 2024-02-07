@@ -1,0 +1,36 @@
+.app {
+    color: red;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column
+}
+
+.image-container{
+    height: 500px;
+    width: 500px
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+.user-list{
+    display: flex;
+    flex-direction: row;
+     justify-content: space-around;
+}
+
+.user-details-col{
+    display: flex;
+    flex-direction: row
+}
+
+.user-title{
+    display: flex;
+    flex-direction: column
+}

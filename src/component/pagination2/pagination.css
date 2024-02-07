@@ -1,0 +1,30 @@
+
+.table-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.table-cols, .row-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.row-item{
+    width: 90%;
+}
+
+.page-number{
+    cursor: pointer;
+    font-weight: normal;
+    color:blue;
+    width:30px;
+    margin-top: 10px;
+
+}
+
+.active-page{
+    font-weight:bold;
+}
+
+
